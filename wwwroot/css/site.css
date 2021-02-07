@@ -1,13 +1,17 @@
 html, body, #fullheight {
     min-height: 100% !important;
     height: 100%;
+    background-color: black;
 }
 .adjust-to-vw-lg {
+    color: azure;
     font-size: 13vw;
 }
 .adjust-to-vw-md {
+    color: azure;
     font-size: 10vw;
 }
 .adjust-to-vw-sm {
+    color: azure;
     font-size: 5vw;
 }

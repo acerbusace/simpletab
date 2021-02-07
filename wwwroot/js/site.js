@@ -1,6 +1,13 @@
 $(document).ready(function() {
+    // Get random photo from https://picsum.photos/
+    if (window.location.search != "?blank") {
+        $("html, body").css("background-image", 'url("https://picsum.photos/' + $(window).width() + '/' + $(window).height() + '/")');
+    }
+
+    // Set the date
     setDate();
 
+    // Set the date every second
     setInterval(function() {
         setDate();
     }, 1000)

@@ -1,17 +1,32 @@
-html, body, #fullheight {
-    min-height: 100% !important;
+html, body {
     height: 100%;
     background-color: black;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
+/* Time */
 .adjust-to-vw-lg {
     color: azure;
     font-size: 13vw;
 }
+
+/* Period */
 .adjust-to-vw-md {
     color: azure;
     font-size: 10vw;
 }
+
+/* Date */
 .adjust-to-vw-sm {
     color: azure;
     font-size: 5vw;
+}
+
+/* Parent container of the above classes */
+.translucentblack {
+    background-color: rgba(0, 0, 0, .5);
 }

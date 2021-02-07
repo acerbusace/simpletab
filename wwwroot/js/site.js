@@ -1,18 +1,27 @@
 $(document).ready(function() {
-    // Get random photo from https://picsum.photos/
-    if (window.location.search != "?blank") {
-        $("html, body").css("background-image", 'url("https://picsum.photos/' + $(window).width() + '/' + $(window).height() + '/")');
-    }
-
-    // Set the date
+    setBackgroundImage();
     setDate();
 
     // Set the date every second
     setInterval(function() {
         setDate();
     }, 1000)
+
+    // Set the background image every hour
+    setInterval(function() {
+        setDate();
+    }, 1000 * 60 * 60)
 })
 
+// Set the background image
+function setBackgroundImage() {
+    // Get random photo from https://picsum.photos/
+    if (window.location.search != "?blank") {
+        $("html, body").css("background-image", 'url("https://picsum.photos/' + $(window).width() + '/' + $(window).height() + '/")');
+    }
+}
+
+// Set the date
 function setDate() {
     var date = new Date()
     var hours = date.getHours();

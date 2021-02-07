@@ -1,6 +1,7 @@
 # [Simple Tab](https://simpletab.azurewebsites.net)
 
 A web site which shows the current local time. This is hosted by azure webapps.
+Append `?blank` to the url to use black background instead.
 
 ## Create or Update
 

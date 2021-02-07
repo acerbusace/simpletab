@@ -44,5 +44,5 @@ function setDate() {
     var stringMonth = date.toLocaleString('default', { month: 'long' });
     var stringWeekday = date.toLocaleString('default', { weekday: 'long' });
     var stringDate = date.getDate().toLocaleString('default', { minimumIntegerDigits: 2});
-    $("#date").text(`${stringMonth} - ${stringWeekday} ${stringDate}`);
+    $("#date").text(`${stringMonth}, ${stringWeekday} ${stringDate}`);
 }

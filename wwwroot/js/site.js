@@ -17,7 +17,7 @@ $(document).ready(function() {
 function setBackgroundImage() {
     // Get random photo from https://picsum.photos/
     if (window.location.search != "?blank") {
-        $("html, body").css("background-image", 'url("https://picsum.photos/' + $(window).width() + '/' + $(window).height() + '/")');
+        $("html, body").css("background-image", `url("https://picsum.photos/${$(window).width()}/${$(window).height()}/")`);
     }
 }
 
@@ -43,6 +43,6 @@ function setDate() {
 
     var stringMonth = date.toLocaleString('default', { month: 'long' });
     var stringWeekday = date.toLocaleString('default', { weekday: 'long' });
-    var stringDate = date.getDate().toLocaleString('default', { minimumIntegerDigits: 2});
-    $("#date").text(`${stringMonth}, ${stringWeekday} ${stringDate}`);
+    var stringDate = date.getDate().toLocaleString('default', { minimumIntegerDigits: 1 });
+    $("#date").text(`${stringWeekday}, ${stringMonth} ${stringDate}`);
 }

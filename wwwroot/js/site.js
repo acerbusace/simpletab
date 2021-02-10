@@ -27,7 +27,7 @@ function setDate() {
     var hours = date.getHours();
     var period = "AM";
     if (hours > 12) {
-        hours -= 11;
+        hours -= 12;
         period = "PM";
     }
     else if (hours === 0) {

@@ -1,16 +1,15 @@
 $(document).ready(function() {
+    // Set the background image every hour
     setBackgroundImage();
-    setDate();
+    setInterval(function() {
+        setBackgroundImage();
+    }, 1000 * 60 * 60)
 
     // Set the date every second
+    setDate();
     setInterval(function() {
         setDate();
     }, 1000)
-
-    // Set the background image every hour
-    setInterval(function() {
-        setDate();
-    }, 1000 * 60 * 60)
 })
 
 // Set the background image
